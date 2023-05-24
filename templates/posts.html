@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+    My posts
+{% endblock %}
+
+{% block bodyblock %}
+    {% for post in object_list %}
+        {% include 'includes/post-detail.html' %}
+        <hr>
+    {% endfor %}
+{% endblock %}
